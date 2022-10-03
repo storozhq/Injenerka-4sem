@@ -1,0 +1,62 @@
+.container {
+    background-color: white;
+    margin: 0 30px;
+    margin-top: 110px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .head {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sort {
+        button {
+            margin-left: 10px;
+            padding: 10px;
+        }
+    }
+    .page {
+        display: flex;
+        gap: 10px;
+        button {
+            padding: 10px;
+        }
+    }
+    .item {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        padding: 30px;
+        border-radius: 10px;
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            div {
+                span:nth-child(1) {
+                    font-weight: 600;
+                }
+                span:nth-child(2) {
+                    margin-left: 30px;
+                    text-align: right;
+                }
+            }
+        }
+        .delete{
+            display: flex;
+            button{
+                height: 30px;
+                border: 0;
+                background-color: white;;
+            }
+            svg{
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+}
